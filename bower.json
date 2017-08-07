@@ -1,0 +1,24 @@
+{
+  "name": "loading-users-example",
+  "description": "Basic JS example",
+  "main": "server.js",
+  "authors": [
+    "Walter Chavarria"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^3.2.1"
+  }
+}
