@@ -3,8 +3,8 @@ Apply Unit Test Workshop
 
 
 - Setup
-* npm install
-* bower install
+1. npm install
+2. bower install
 
 - Start
-* npm start
+1. npm start
