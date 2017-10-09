@@ -1,5 +1,6 @@
 body {
-  background: #76b852;
+  background: #2674EB;
+  padding-top: 70px;
 }
 
 .page {
@@ -17,9 +18,10 @@ body {
 
 .dashboardPage {
     background: #FFFFFF;
-    width: 100%;
+    width: 80%;
     padding: 45px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin-bottom: 25px;
 }
 
 .form {

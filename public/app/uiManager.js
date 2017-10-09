@@ -1,6 +1,6 @@
-var _utils = {
+var _uiManager = {
   goToDashboard: function (html) {
-    $('#pages-main-content').html(html);
+    $('#pages-main-content').load(html);
     _users.init();
   }
 };

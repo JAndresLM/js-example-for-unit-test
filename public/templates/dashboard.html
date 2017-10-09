@@ -1,0 +1,81 @@
+<div class="page dashboardPage">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Welcome!</h2>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row" ng-if="!Users.loading">
+            <div class="col-sm-4">
+                <input 
+                    type="text" 
+                    name="name" 
+                    class="form-control" 
+                    ng-model="Users.search" 
+                    placeholder="Search..."
+                >
+            </div>
+            <div class="col-sm-4">
+                <button 
+                    id="users-update-btn" 
+                    type="button" 
+                    name="button" 
+                    class="btn btn-primary" 
+                    onClick="_users.update()"
+                >
+                    Update Comments
+                </button>
+                <button 
+                    id="users-save-btn"
+                    type="button" 
+                    name="button" 
+                    class="btn btn-success"
+                    style="display: none" 
+                    onClick="_users.save()"
+                >
+                    Save
+                </button>
+            </div>
+        </div>
+        <br>
+        <table class="table table-striped">
+            <thead>
+                <th></th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Last Post</th>
+            </thead>
+            <tbody id="users-table-content"></tbody>
+        </table>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <button 
+                    onClick="_users.getCompleteAddress()" 
+                    type="button" 
+                    name="button" 
+                    class="btn btn-info"
+                >
+                    Get Complete Address
+                </button>
+            </div>
+            <div class="col-sm-4">
+                <button 
+                    onClick="_users.getCompletePost()" 
+                    type="button" 
+                    name="button" 
+                    class="btn btn-info"
+                >
+                    Get Complete Post
+                </button>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div id="user-actions-result" class="col-sm-12 jumbotron"></div>
+        </div>
+    </div>
+</div>
