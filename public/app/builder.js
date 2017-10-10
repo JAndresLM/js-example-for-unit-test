@@ -1,3 +1,5 @@
+//To run app in web browser, please comment imports of modules and export at the end of file
+
 var _builder = {
 
     buildUsersContent:function (users) {
@@ -49,3 +51,7 @@ var _builder = {
         return resultContent;
     },
 };
+
+// /*
+module.exports = _builder;
+//*/

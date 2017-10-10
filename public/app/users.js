@@ -1,7 +1,12 @@
-var _users = {
+//To run app in web browser, please comment imports of modules and export at the end of file
+// /*
+var _uiManager = require("../app/uiManager");
+var _builder = require("../app/builder");
+// */
+
+var _users =  {
 
     init: function () {
-        //debugger;
         _uiManager.hideSaveButton();
         this.getUsers();
     },
@@ -74,3 +79,7 @@ var _users = {
     users: [],
     template: "templates/dashboard.html"
 };
+
+// /*
+module.exports = _users;
+// */
