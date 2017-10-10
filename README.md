@@ -8,3 +8,6 @@ Apply Unit Test Workshop
 
 - Start
 1. npm start
+
+- Run Tests and get Coverage
+1. npm run coverage 
