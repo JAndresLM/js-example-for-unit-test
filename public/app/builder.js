@@ -14,7 +14,7 @@ var _builder = {
             '<td><p>' + user.id +'</p></td>'+
             '<td><p>' + user.name + '</p></td>'+
             '<td><p>' + user.email + '</p></td>'+
-            '<td><p>' + user.posts[0].title || ''+ '</p></td>'+
+            '<td><p>' + (user.posts[0].title || '')+ '</p></td>'+
           '</tr>'
         );
         return result + row;

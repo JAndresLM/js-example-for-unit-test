@@ -1,7 +1,7 @@
 var user = require("../app/users");
 var uiManager = require("../app/uiManager");
 var builder = require("../app/builder");
-var userTestData = require('./userTestData');
+var userTestData = require('../test_data/userTestData');
 
 var assert = require("assert");
 var chai = require("chai");
