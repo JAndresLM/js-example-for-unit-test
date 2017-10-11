@@ -31,23 +31,28 @@ var _users =  {
                 url: "http://jsonplaceholder.typicode.com/posts",
                 success: function (data) {
                     _users.posts = data;
-                    _users.mergePostsIntoUsers();
-                    _users.displayUsers();
+                    _users.users = _users.mergePostsIntoUsers(_users.users, _users.posts);
+                    _users.displayUsers(_users.users);
                 }
             }
         );
     },
 
-    mergePostsIntoUsers: function () {
-        this.users.forEach(function (user) {
-            user.posts = _users.posts.filter(function (post) {
+    mergePostsIntoUsers: function (usersList,postsList) {
+        var users = usersList;
+        var posts = postsList;
+
+        users.forEach(function (user) {
+            user.posts = posts.filter(function (post) {
                 return user.id === post.userId;
             });
         });
+
+        return users;
     },
 
-    displayUsers: function () {
-        var usersTableHtml = _builder.buildUsersContent(this.users)
+    displayUsers: function (users) {
+        var usersTableHtml = _builder.buildUsersContent(users)
         _uiManager.displayUsersTable(usersTableHtml);
     },
 
